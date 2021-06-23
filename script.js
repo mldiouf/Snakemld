@@ -6,7 +6,7 @@ const eatAudio = new Audio()
 eatAudio.src = 'sons/eat.mp3'
 
 const deadAudio = new Audio()
-deadAudio.src = 'sons/dee.mp3'
+deadAudio.src = 'sons/dead.mp3'
 
 class SnakePart{
     constructor(x,y){
@@ -56,14 +56,17 @@ function drawGame(){
     if(score > 9){
         speed = 10;
     }
-    if(score > 15){
+    if(score > 14){
         speed = 15;
     }
-    if(score > 20){
+    if(score > 19){
         speed = 20;
     }
-    if(score > 25){
-        speed = 15;
+    if(score > 24){
+        speed = 25;
+    }
+    if(score > 29){
+        speed = 35;
     }
 
     drawVitesse();
